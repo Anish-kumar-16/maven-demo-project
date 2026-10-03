@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('Test'){
       steps{
-        sh 'mvn dependency:tree-Dscope=test'
+        sh 'mvn dependency:tree -Dscope=test'
         sh 'mvn test'
       }
     }
